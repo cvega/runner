@@ -23,7 +23,7 @@ RUN export DOCKER_ARCH=x86_64 \
     && tar zxvf docker.tgz \
     && rm -rf docker.tgz
 
-FROM mcr.microsoft.com/dotnet/runtime-deps:6.0-jammy
+FROM mcr.microsoft.com/dotnet/runtime-deps:6.0.19-jammy
 
 ENV DEBIAN_FRONTEND=noninteractive
 ENV RUNNER_MANUALLY_TRAP_SIG=1
