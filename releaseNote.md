@@ -1,25 +1,9 @@
-## Features
-- Resolve Actions Directly From Launch for Run Service Jobs (#2529)
-- Send annotations to run-service (#2574)
-- Add `--no-default-labels` config option to self-hosted runners (#2443)
-- Update container-hooks to 0.3.2 in runner docker image (#2618)
-- Set runner environment in context and env (#2518)
-- Switch runner image from Debian to Ubuntu 22.04 (#2651)
-
 ## Bugs
-- Handle conflict errors from run service (#2570)
-- Fix null guard bug (#2576)
-- Trace WebSocket exception into verbose level to reduce noise in diag log (#2591)
-- Ensure multiple composite annotations are correctly written (#2311)
-- Adding Consistency to 'Failed To Resolve Action Download Info' Infrastructure Error Flagging (#2488)
-- Filter out empty arguments in container hooks (#2633)
-- Fix uses: docker://image:tag steps when container hook is used (#2626)
+- Fixes `if:cancelled()` composite steps not running and normal composite steps not interrupting when the job is cancelled (#2638)
+- Fix the bug causing double error reporting fix to remain inactive (#2703)
 
 ## Misc
-- Contribute.md: Fix link to style guidelines (#2560)
-- Remove Temporary Serialization Shim (#2549)
-- Move Using V2 Flow log to Trace (#2635)
-- Add utf8 with bom (#2641)
+- Collect telemetry on GitHub-related HTTP requests (#2691) 
 
 _Note: Actions Runner follows a progressive release policy, so the latest release might not be available to your enterprise, organization, or repository yet. 
 To confirm which version of the Actions Runner you should expect, please view the download instructions for your enterprise, organization, or repository. 
